@@ -13,38 +13,80 @@
       "right-side right-side"
       "footer footer";
   }
+
+  @media (min-width: 992px) {
+    grid-template-columns: 20vw 1fr 20vw;
+    grid-template-rows: 10vh 30vh 50vh 10vh;
+    grid-template-areas:
+      "header header header"
+      "left-side content right-side"
+      "left-side content2 right-side"
+      "footer footer footer";
+  }
 }
 
 .header {
   background-color: red;
-  grid-area: header;
+  @media (min-width: 576px) {
+    grid-area: header;
+  }
+
+  @media (min-width: 992) {
+    grid-area: header;
+  }
 }
 
 .left-side {
   background-color: green;
-  grid-area: left-side;
+  @media (min-width: 576px) {
+    grid-area: left-side;
+  }
+
+  @media (min-width: 992) {
+    grid-area: left-side;
+  }
 }
 
 .content {
   background-color: pink;
-  grid-area: content;
+  @media (min-width: 576px) {
+    grid-area: content;
+  }
+
+  @media (min-width: 992) {
+    grid-area: content;
+  }
 }
 
 .content2 {
   background-color: blue;
-  grid-area: content2;
+  @media (min-width: 576px) {
+    grid-area: content2;
+  }
+
+  @media (min-width: 992) {
+    grid-area: content2;
+  }
 }
 
 .right-side {
   background-color: gray;
-  grid-area: right-side;
+  @media (min-width: 576px) {
+    grid-area: right-side;
+  }
+
+  @media (min-width: 992) {
+    grid-area: right-side;
+  }
 }
 
 .footer {
   background-color: orange;
-  grid-area: footer;
-}
+  @media (min-width: 576px) {
+    grid-area: footer;
+  }
 
-h1 {
-  color: red;
+  @media (min-width: 992) {
+    grid-area: footer;
+  }
 }
