@@ -1,0 +1,31 @@
+.container {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 10vh 30vh 30vh 10vh 10vh 10vh;
+}
+
+.header {
+  background-color: red;
+}
+
+.left-side {
+  background-color: green;
+}
+
+.content {
+  background-color: pink;
+}
+.content2 {
+  background-color: blue;
+}
+.right-side {
+  background-color: gray;
+}
+
+.footer {
+  background-color: orange;
+}
+
+h1 {
+  color: red;
+}
